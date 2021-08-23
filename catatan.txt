@@ -1,0 +1,24 @@
+…or create a new repository on the command line
+disini ada dir BELAJAR_SASS sumber dari unpas youtuber mas galih dosen unpas
+ada tambahan file isi pseudo_elemnt ::after dan ::before
+dan pesudo_class yg kita tahu adalah:(lvha) :link,:visited,:hover,:activated
+psudo adalh semu disebut semu krn class /element ini tidak di tulis di html tapi nulisnya di css
+sperti element ::after ditulis stlah sbuah element yg ada /telah ada ,mrupakan content tambahan 
+tdak ditulis di html contoh element body,h1,p nah ini ::after nulisnya ditambahkan di element yg ada
+mis ditulis stlah element p, p::after atau ditulis stelah class , .myClass::after
+jadi seprti itu 
+
+
+=======================tempat taruh git=================
+echo "# LEARN_BASIC_SASS" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:indraworks/LEARN_BASIC_SASS.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin git@github.com:indraworks/LEARN_BASIC_SASS.git
+git branch -M main
+git push -u origin main
+======================================

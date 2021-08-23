@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$color-primary: #f9ed69; //yellow color
+$color-secondary: #f08a5d;
+$color-tertiary: #b83b5e;
+$color-text-dark: #333;
+$color-text-light: #eee;
+$width-buttons: 100px;
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+  & ::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+//ini dibawah bisa kita ganti pakai nav masuk di kalangnya
+//krn nama sama maka pakai &::after {
+// //mkasudnay after stlah ada float action
+// .clear-fix::after {
+//   content: ''; //content diclear
+//   clear: both;
+//   display: table;
+// }
+
+.navigation {
+  list-style: none;
+  float: left;
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    &:first-child {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+    }
+  }
+}
+
+.buttons {
+  float: right;
+  display: block;
+}
+//lvha ingat utk a:link visited hover activated
+.btn-main:link,
+.btn-hot:link {
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  //arahvertikalborder-radius:;
+  width: $width-buttons;
+  border-radius: 15px;
+}
+
+.btn-main {
+  //gak perlu tuis lagi ganit variable
+  //&:link dan & :hover
+  color: $color-text-light;
+  &:link {
+    background-color: $color-secondary;
+  }
+  &:hover {
+    background-color: darken($color-secondary, 45%);
+    //darken udah settingan darken(warna,1%-100%) buat hadi lebih gelap
+    //ligthen dah settingan darken(warna,1%-100%) buat hadi lebih terang
+  }
+}
+
+.btn-hot {
+  //gak perlu tuis lagi ganit variable
+  //&:link dan & :hover
+  color: $color-text-light;
+  &:link {
+    background-color: $color-tertiary;
+  }
+  &:hover {
+    background-color: darken($color-tertiary, 45%);
+    //darken udah settingan darken(warna,1%-100%) buat hadi lebih gelap
+    //ligthen dah settingan darken(warna,1%-100%) buat hadi lebih terang
+  }
+}

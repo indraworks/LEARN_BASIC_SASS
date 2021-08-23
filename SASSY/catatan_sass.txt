@@ -1,0 +1,30 @@
+kit amnggunakan scss
+kita setting format output di jon setting
+oi bagian sass compiler output kita taruh di dir CSS
+tulis source file main.scss otomatis akan hasilnya main.CSS
+
+
+tentang sass :
+sass variable gunakan $nama_variable
+utk nested selector misal pada contoh 
+
+  .navigation li {}
+
+  maka kita bisa buat kalang nested seletor diatas
+   .navigation {
+     li {}
+   }
+  karna li adalah anak dari navigation selector
+  nah kita mau pake seting pesudo selector li paling pertama
+  kalao css :
+  .navigation li:first-child {} 
+  di sass cukup kita ganti dgn & li tak perlu ditulislagi:
+  sass :
+  .navigation {
+    li {
+      &:first-child {}
+    }
+  }
+
+ 
+
